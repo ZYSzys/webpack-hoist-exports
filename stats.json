@@ -1,0 +1,709 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.41.6",
+  "hash": "54533a12c64b43c06456",
+  "time": 166,
+  "builtAt": 1588993107559,
+  "publicPath": "",
+  "outputPath": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 973,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 252,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "3abe3eedf90eb4dc9c13",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js 3394ca0659e16ee5eda50cc0783d6891",
+          "name": "./src/index.js + 2 modules",
+          "index": 0,
+          "index2": 2,
+          "size": 252,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "modules": [
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "name": "./src/index.js",
+              "index": 0,
+              "index2": 2,
+              "size": 125,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 23,
+                "building": 16
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "./src",
+                  "loc": "main"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is an entry point"
+              ],
+              "depth": 0,
+              "source": "import { arrayColumnWrapper } from './chain';\n\nconst getColumns = () => arrayColumnWrapper([]);\n\nconsole.log(getColumns());\n\n"
+            },
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+              "name": "./src/chain.js",
+              "index": 1,
+              "index2": 1,
+              "size": 89,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "issuerId": null,
+              "issuerName": "./src/index.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+                  "name": "./src/index.js",
+                  "profile": {
+                    "factory": 23,
+                    "building": 16
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 1,
+                "building": 20
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./chain",
+                  "loc": "1:0-45"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "./chain",
+                  "loc": "3:25-43"
+                }
+              ],
+              "usedExports": [
+                "arrayColumnWrapper"
+              ],
+              "providedExports": [
+                "constants",
+                "arrayColumnWrapper"
+              ],
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "export * from './shared';\n\nexport function arrayColumnWrapper(array) {\n  return array;\n}\n"
+            },
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/shared.js",
+              "name": "./src/shared.js",
+              "index": 2,
+              "index2": 0,
+              "size": 38,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+              "issuerId": null,
+              "issuerName": "./src/chain.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+                  "name": "./src/index.js",
+                  "profile": {
+                    "factory": 23,
+                    "building": 16
+                  }
+                },
+                {
+                  "id": null,
+                  "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+                  "name": "./src/chain.js",
+                  "profile": {
+                    "factory": 1,
+                    "building": 20
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 3,
+                "building": 14
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+                  "module": "./src/chain.js",
+                  "moduleName": "./src/chain.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./shared",
+                  "loc": "1:0-25"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+                  "module": "./src/chain.js",
+                  "moduleName": "./src/chain.js",
+                  "type": "harmony export imported specifier",
+                  "userRequest": "./shared",
+                  "loc": "1:0-25"
+                }
+              ],
+              "usedExports": false,
+              "providedExports": [
+                "constants"
+              ],
+              "optimizationBailout": [],
+              "depth": 2,
+              "source": "export * from './side-effects-false';\n"
+            }
+          ],
+          "filteredModules": 0
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/index.js",
+      "name": "./src/side-effects-false/index.js",
+      "index": null,
+      "index2": null,
+      "size": 62,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [],
+      "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/shared.js",
+      "issuerId": null,
+      "issuerName": "./src/shared.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 23,
+            "building": 16
+          }
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+          "name": "./src/chain.js",
+          "profile": {
+            "factory": 1,
+            "building": 20
+          }
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/shared.js",
+          "name": "./src/shared.js",
+          "profile": {
+            "factory": 3,
+            "building": 14
+          }
+        }
+      ],
+      "profile": {
+        "factory": 3,
+        "building": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js 3394ca0659e16ee5eda50cc0783d6891",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./side-effects-false",
+          "loc": "1:0-37"
+        },
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js 3394ca0659e16ee5eda50cc0783d6891",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony export imported specifier",
+          "userRequest": "./side-effects-false",
+          "loc": "1:0-37"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "constants"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not in any chunk"
+      ],
+      "depth": 3,
+      "source": "import * as constants from './constants'\nexport { constants }\n"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js 3394ca0659e16ee5eda50cc0783d6891",
+      "name": "./src/index.js + 2 modules",
+      "index": 0,
+      "index2": 2,
+      "size": 252,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "modules": [
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 2,
+          "size": 125,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 23,
+            "building": 16
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "import { arrayColumnWrapper } from './chain';\n\nconst getColumns = () => arrayColumnWrapper([]);\n\nconsole.log(getColumns());\n\n"
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+          "name": "./src/chain.js",
+          "index": 1,
+          "index2": 1,
+          "size": 89,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 23,
+                "building": 16
+              }
+            }
+          ],
+          "profile": {
+            "factory": 1,
+            "building": 20
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./chain",
+              "loc": "1:0-45"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "./chain",
+              "loc": "3:25-43"
+            }
+          ],
+          "usedExports": [
+            "arrayColumnWrapper"
+          ],
+          "providedExports": [
+            "constants",
+            "arrayColumnWrapper"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export * from './shared';\n\nexport function arrayColumnWrapper(array) {\n  return array;\n}\n"
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/shared.js",
+          "name": "./src/shared.js",
+          "index": 2,
+          "index2": 0,
+          "size": 38,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+          "issuerId": null,
+          "issuerName": "./src/chain.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 23,
+                "building": 16
+              }
+            },
+            {
+              "id": null,
+              "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+              "name": "./src/chain.js",
+              "profile": {
+                "factory": 1,
+                "building": 20
+              }
+            }
+          ],
+          "profile": {
+            "factory": 3,
+            "building": 14
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+              "module": "./src/chain.js",
+              "moduleName": "./src/chain.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./shared",
+              "loc": "1:0-25"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+              "module": "./src/chain.js",
+              "moduleName": "./src/chain.js",
+              "type": "harmony export imported specifier",
+              "userRequest": "./shared",
+              "loc": "1:0-25"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "constants"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export * from './side-effects-false';\n"
+        }
+      ],
+      "filteredModules": 0
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/constants.js",
+      "name": "./src/side-effects-false/constants.js",
+      "index": null,
+      "index2": null,
+      "size": 29,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [],
+      "issuer": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/index.js",
+      "issuerId": 0,
+      "issuerName": "./src/side-effects-false/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 23,
+            "building": 16
+          }
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/chain.js",
+          "name": "./src/chain.js",
+          "profile": {
+            "factory": 1,
+            "building": 20
+          }
+        },
+        {
+          "id": null,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/shared.js",
+          "name": "./src/shared.js",
+          "profile": {
+            "factory": 3,
+            "building": 14
+          }
+        },
+        {
+          "id": 0,
+          "identifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/index.js",
+          "name": "./src/side-effects-false/index.js",
+          "profile": {
+            "factory": 3,
+            "building": 1
+          }
+        }
+      ],
+      "profile": {
+        "factory": 1,
+        "building": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/index.js",
+          "module": "./src/side-effects-false/index.js",
+          "moduleName": "./src/side-effects-false/index.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./constants",
+          "loc": "1:0-40"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/zhangyongsheng/Projects/webpack-hoist-exports/src/side-effects-false/index.js",
+          "module": "./src/side-effects-false/index.js",
+          "moduleName": "./src/side-effects-false/index.js",
+          "type": "harmony export imported specifier",
+          "userRequest": "./constants",
+          "loc": "2:0-20"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "hello"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not in any chunk"
+      ],
+      "depth": 4,
+      "source": "export const hello = 'world'\n"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}

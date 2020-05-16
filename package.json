@@ -1,0 +1,17 @@
+{
+  "name": "webpack-hoist-exports",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "stats": "webpack -p --profile --stats --json >stats.json"
+  },
+  "dependencies": {
+    "webpack": "4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
