@@ -90,11 +90,10 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./src/shared.js
-/* harmony import */ var _side_effects_false__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* unused harmony reexport * */
 
 
 // CONCATENATED MODULE: ./src/chain.js
